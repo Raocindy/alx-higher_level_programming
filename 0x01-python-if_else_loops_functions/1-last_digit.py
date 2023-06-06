@@ -3,8 +3,9 @@ import random
 
 number = random.randint(-10000, 10000)
 last_digit = abs(number) % 10
+sign = "negative" if number < 0 else "non-negative"
 
-message = "Last digit of {0} is {1}".format(number, last_digit)
+message = "Last digit of {0} is {1} and it is {2}".format(number, last_digit, sign)
 
 if last_digit == 0:
     print("{0} and is 0".format(message))
