@@ -1,3 +1,7 @@
-for i in range(90, 64, -1):
-    print(chr(i + 32), chr(i), end='')
+#!/usr/bin/python3
+
+for i in range(25, -1, -1):
+    print("{0}{1}".format(chr(i + 97), chr(i + 65)), end='')
+
+print("", end='')
 
