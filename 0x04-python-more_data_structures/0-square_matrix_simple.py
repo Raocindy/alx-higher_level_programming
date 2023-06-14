@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 
 def square_matrix_simple(matrix=[]):
-result = [[0 for _ in range(len(row))]for row in matrix]
+    my_matrix = [row[:]for row in matrix]
+    for idx, row in enumerate(my_matrix):
+        for 1dx2, col in enumerate(my_matix):
+            my_matrix[idx][idx2] = row[idx2] ** 2
 
-for i in range(len(matrix)):
-    for j in range(len(matrix{i})):
-        result[i][j] = matrix[i][j] ** 2
-
-    return result
+        return my_matrix
