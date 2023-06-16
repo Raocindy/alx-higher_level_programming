@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
-def custom_delete(dictionary, custom_key=""):
-    if dictionary is None:
+def simple_delete(a_dictionary, key=""):
+    if a_dictionary is None:
         return
-    if key in dictionary:
-        del dictionary[custom_key]
-    return dictionary
+    if key in a_dictionary:
+        del a_dictionary[key]
+    return a_dictionary
